@@ -1,0 +1,39 @@
+<!-- 타입B: 비교형 — "이런 제품들과 비교해봤습니다" -->
+<div class="blog-post type-b">
+  <h2>{{TITLE}}</h2>
+
+  <p>비슷한 제품이 너무 많아서 뭘 골라야 할지 고민되시죠?<br>
+  오늘은 {{PRODUCT_NAME}}을 비슷한 인기 제품들과 꼼꼼하게 비교해봤습니다.</p>
+
+  <!--IMAGE_1-->
+
+  <h3>비교 기준</h3>
+  <p>{{COMPARE_CRITERIA}}</p>
+
+  <h3>제품 1: {{PRODUCT_NAME}}</h3>
+  <p>{{PRODUCT_DETAIL}}</p>
+  <!--IMAGE_2-->
+
+  <h3>제품 2: {{COMPARE_PRODUCT_1}}</h3>
+  <p>{{COMPARE_DETAIL_1}}</p>
+  <!--IMAGE_3-->
+
+  <h3>제품 3: {{COMPARE_PRODUCT_2}}</h3>
+  <p>{{COMPARE_DETAIL_2}}</p>
+  <!--IMAGE_4-->
+
+  <h3>비교 결과 한눈에 보기</h3>
+  <table style="width:100%; border-collapse:collapse; margin:16px 0;">
+    <tr style="background:#f5f5f5;"><th style="padding:10px; border:1px solid #ddd;">항목</th><th style="padding:10px; border:1px solid #ddd;">{{PRODUCT_NAME}}</th><th style="padding:10px; border:1px solid #ddd;">{{COMPARE_PRODUCT_1}}</th><th style="padding:10px; border:1px solid #ddd;">{{COMPARE_PRODUCT_2}}</th></tr>
+    {{COMPARE_TABLE_ROWS}}
+  </table>
+
+  <h3>결론</h3>
+  <p>{{CONCLUSION}}</p>
+
+  <p style="text-align:center; margin:24px 0;">
+    <a href="{{PURCHASE_URL}}" class="cta">{{PRODUCT_NAME}} 상세 보기</a>
+  </p>
+
+  <!--IMAGE_5-->
+</div>
