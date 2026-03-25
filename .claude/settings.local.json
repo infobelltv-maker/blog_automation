@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \":*)",
+      "Bash(wc -l d:/automation/blog_automation/**/*.py d:/automation/blog_automation/*.py)",
+      "Bash(pip install:*)",
+      "Bash(streamlit run:*)",
+      "Bash(taskkill //F //IM streamlit.exe)",
+      "Bash(tasklist)",
+      "Read(//d/automation/blog_automation/**)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''app.py'', doraise=True\\); print\\(''OK''\\)\")",
+      "Bash(pip show:*)",
+      "Bash(python -m playwright install chromium)",
+      "Bash(python -c \"from playwright.sync_api import sync_playwright; print\\(''playwright OK''\\)\")",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''agents/blog_content.py'', doraise=True\\); print\\(''OK''\\)\")",
+      "Bash(where gh:*)"
+    ]
+  }
+}
