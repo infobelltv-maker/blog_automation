@@ -569,10 +569,10 @@ if st.session_state.blog_result:
                         except Exception:
                             st.warning('텍스트를 위 "텍스트" 탭에서 직접 복사해주세요.')
 
-            with bcol3:
-                if st.button('포스팅 키트 열기', use_container_width=True):
-                    if kit.get('kit_dir'):
-                        blog_publisher.open_folder(kit['kit_dir'])
+                with bcol3:
+                    if st.button('포스팅 키트 열기', use_container_width=True):
+                        if kit.get('kit_dir'):
+                            blog_publisher.open_folder(kit['kit_dir'])
 
             # 키트 구성 표시
             st.markdown('---')
